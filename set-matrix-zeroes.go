@@ -51,7 +51,7 @@ func main1() {
 }
 
 // optimized approach
-func main() {
+func main2() {
 	// matrix := [][]int{{1, 1, 1}, {1, 0, 1}, {1, 1, 1}}
 	matrix := [][]int{{0, 1, 2, 0}, {3, 4, 5, 2}, {1, 3, 1, 5}}
 	fmt.Println("Current Matrix: ")
