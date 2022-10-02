@@ -5,7 +5,7 @@ import (
 	"fmt"
 )
 
-func main() {
+func mainpascal() {
 	const rows = 5
 	arr := [][]int{}
 
