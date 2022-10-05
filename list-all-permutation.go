@@ -5,7 +5,7 @@ import (
 	"fmt"
 )
 
-func main() {
+func listAllPermutation() {
 	arr := []int{1, 2, 3}
 	ans := [][]int{}
 	fmt.Println(arr)
