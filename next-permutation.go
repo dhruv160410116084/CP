@@ -6,7 +6,7 @@ import (
 	"sort"
 )
 
-func main() {
+func main_next() {
 	nums := []int{3, 2, 1, 4, 5}
 	// nums := []int{1, 3, 2}
 	// sort.Sort(sort.Reverse(sort.IntSlice(nums[0:])))
