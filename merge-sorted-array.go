@@ -3,7 +3,7 @@ package main
 
 import "fmt"
 
-func main() {
+func main_merge_sorted_array() {
 	nums1 := []int{0}
 	m := 0
 	nums2 := []int{1}
