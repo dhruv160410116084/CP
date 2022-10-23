@@ -2,14 +2,16 @@ package main
 
 import "fmt"
 
-func main_merge_sort() {
-	arr := []int{5, 3, 2, 1, 4}
+func main_count_inversion() {
+	arr := []int{5, 4, 3, 2, 1}
+	inv_count := 0
 	fmt.Println(int(3 / 2))
-	merge_sort(0, len(arr)-1, arr)
+	merge_sort(0, len(arr)-1, arr, &inv_count)
 	fmt.Println(arr)
+	fmt.Println(inv_count)
 }
 
-func merge(start int, mid int, end int, arr []int) []int {
+func merge(start int, mid int, end int, arr []int, inv_count *int) []int {
 
 	n1 := mid - start + 1
 	n2 := end - mid
@@ -29,6 +31,7 @@ func merge(start int, mid int, end int, arr []int) []int {
 			x++
 		} else {
 			arr[m] = R[y]
+			*inv_count += (len(L) - x) //count inversion logic
 			y++
 		}
 		m++
@@ -48,12 +51,12 @@ func merge(start int, mid int, end int, arr []int) []int {
 	return arr
 }
 
-func merge_sort(start int, end int, arr []int) {
+func merge_sort(start int, end int, arr []int, inv_count *int) {
 	if start < end {
 		mid := int((start + end) / 2)
-		merge_sort(start, mid, arr)
-		merge_sort(mid+1, end, arr)
-		merge(start, mid, end, arr)
+		merge_sort(start, mid, arr, inv_count)
+		merge_sort(mid+1, end, arr, inv_count)
+		merge(start, mid, end, arr, inv_count)
 
 	}
 
