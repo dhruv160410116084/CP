@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func main() {
+func main_majority_element() {
 	nums := []int{3, 2, 3}
 
 	cur_ele := nums[0]
