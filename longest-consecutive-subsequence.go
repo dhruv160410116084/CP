@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func main() {
+func main_lcs() {
 	nums := []int{0, -1}
 
 	result := 0
