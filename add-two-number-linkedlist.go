@@ -96,7 +96,7 @@ func (h1 *ListNode) add(h2 *ListNode) *ListNode {
 	return head
 }
 
-func main() {
+func main_add_two_number_linkedList() {
 	var head1 *ListNode = &ListNode{-999, nil}
 	var head2 *ListNode = &ListNode{-999, nil}
 	// var head3 *ListNode = &ListNode{-999, nil}
