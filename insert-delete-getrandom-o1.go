@@ -53,7 +53,7 @@ func (this *RandomizedSet) GetRandom() int {
 	// return this.set_map[r]
 }
 
-func main() {
+func main_insert_delete_getrandom() {
 	obj := Constructor()
 	// fmt.Println(obj.set_map)
 	// fmt.Println(obj.Insert(0))
