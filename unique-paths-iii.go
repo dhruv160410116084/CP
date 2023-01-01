@@ -32,7 +32,7 @@ func backtrack(grid [][]int, i int, j int, count int, nonObs int) {
 
 }
 
-func main() {
+func main_unique_paths_iii() {
 	// grid := [][]int{{1, 0, 0, 0}, {0, 0, 0, 0}, {0, 0, 0, 2}}
 	grid := [][]int{{0, 1}, {2, 0}}
 
