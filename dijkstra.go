@@ -4,7 +4,7 @@ import (
 	"fmt"
 )
 
-func main() {
+func main_dijkstra() {
 	n := 4
 	flights := [][]int{{0, 1, 100}, {1, 2, 100}, {2, 0, 100}, {1, 3, 600}, {2, 3, 200}}
 	src := 0
