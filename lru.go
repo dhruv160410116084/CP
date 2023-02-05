@@ -85,7 +85,7 @@ func (this *LRUCache) Put(key int, value int) {
 
 }
 
-func main() {
+func main_lru() {
 	q := []string{"LRUCache", "get", "put", "get", "put", "put", "get", "get"}
 	o := [][]int{{2}, {2}, {2, 6}, {1}, {1, 5}, {1, 2}, {1}, {2}}
 	// ans := make([]int,)

@@ -18,6 +18,7 @@ func (this *RandomizedSet) Insert(val int) bool {
 	if _, ok := this.set_map[val]; ok {
 		return false
 	}
+
 	this.set = append(this.set, val)
 
 	this.set_map[val] = len(this.set) - 1
